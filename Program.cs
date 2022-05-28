@@ -11,25 +11,25 @@ internal class Program
         {
             for (int j = 0; j < array.GetLength(1); j++)
             {
-                if (i == 1)
-                {
-                    sum += array[i, j];
-                }
-
                 Console.Write(array[i, j] + " ");
             }
 
             Console.WriteLine();
         }
 
-        for (int i = 0; i < array.GetLength(0); i++)
+        for (int i = 1; i == 1; i++)
         {
             for (int j = 0; j < array.GetLength(1); j++)
             {
-                if (j == 0)
-                {
-                    product *= array[i, j];
-                }
+                sum += array[1, j];
+            }
+        }
+
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j == 0; j++)
+            {
+                    product *= array[i, 0];
             }
         }
 
