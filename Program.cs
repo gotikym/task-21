@@ -17,20 +17,14 @@ internal class Program
             Console.WriteLine();
         }
 
-        for (int i = 1; i == 1; i++)
+        for (int i = 0; i < array.GetLength(1); i++)
         {
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                sum += array[1, j];
-            }
+            sum += array[1, i];
         }
 
         for (int i = 0; i < array.GetLength(0); i++)
         {
-            for (int j = 0; j == 0; j++)
-            {
-                    product *= array[i, 0];
-            }
+            product *= array[i, 0];
         }
 
         Console.WriteLine("Произведение первого столбца равно - " + product);
